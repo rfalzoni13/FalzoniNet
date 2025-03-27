@@ -1,0 +1,29 @@
+@FalzoniNetApi.Presentation.Api_HostAddress = http://localhost:5289
+
+//Customer
+GET {{FalzoniNetApi.Presentation.Api_HostAddress}}/api/Customer/GetAll
+Accept: application/json
+###
+
+GET {{FalzoniNetApi.Presentation.Api_HostAddress}}/api/Customer/Get/4A6B64AD-4F3B-430F-81A0-D9FECCEFF025
+Accept: application/json
+###
+
+POST {{FalzoniNetApi.Presentation.Api_HostAddress}}/api/Customer/Create
+Accept: */*
+Content-Type: application/json
+{
+    "name": "Test Customer",
+    "document": "123.456.789-00"
+}
+###
+
+PUT {{FalzoniNetApi.Presentation.Api_HostAddress}}/api/Customer/Update
+Accept: */*
+Content-Type: application/json
+{
+    "id": "D8435F2B-CF1A-4AD8-A706-55462A204E5D",
+    "name": "Test Updated Customer",
+    "document": "321.454.787-06"
+}
+###

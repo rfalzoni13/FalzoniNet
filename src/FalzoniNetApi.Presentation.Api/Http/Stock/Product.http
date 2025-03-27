@@ -1,0 +1,30 @@
+@FalzoniNetApi.Presentation.Api_HostAddress = http://localhost:5289
+
+//Product
+GET {{FalzoniNetApi.Presentation.Api_HostAddress}}/api/Product/GetAll
+Accept: application/json
+###
+
+GET {{FalzoniNetApi.Presentation.Api_HostAddress}}/api/Product/Get/4A6B64AD-4F3B-430F-81A0-D9FECCEFF025
+Accept: application/json
+###
+
+POST {{FalzoniNetApi.Presentation.Api_HostAddress}}/api/Product/Create
+Accept: */*
+Content-Type: application/json
+{
+    "name": "Test Product",
+    "price": 99.99,
+    "discount": 5.99
+}
+###
+
+PUT {{FalzoniNetApi.Presentation.Api_HostAddress}}/api/Product/Update
+Accept: */*
+Content-Type: application/json
+{
+    "id": "{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}",
+    "price": 199.99,
+    "discount": 9.99
+}
+###

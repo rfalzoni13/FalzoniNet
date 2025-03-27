@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>b1db837f-c048-4d92-b279-b2c6cea95357</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="8.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FalzoniNetApi.Domain\FalzoniNetApi.Domain.csproj" />
+    <ProjectReference Include="..\FalzoniNetApi.Infra.IoC\FalzoniNetApi.Infra.IoC.csproj" />
+    <ProjectReference Include="..\FalzoniNetApi.Service\FalzoniNetApi.Service.csproj" />
+  </ItemGroup>
+
+</Project>
